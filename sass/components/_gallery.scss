@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var (--space-gap);
+  gap: var(--space-gap);
   margin-top: 50px;
 
   &__product:focus,
@@ -16,7 +16,7 @@
   }
   &__product {
     flex-basis: calc((100% - 90px) / 3);
-    background-color: var (--brand-color2);
+    background-color: var(--brand-color2);
     position: relative;
     overflow: hidden;
   }
@@ -27,7 +27,7 @@
     border-top: none;
     padding: 20px 24px;
     position: relative;
-    background-color: var (--brand-color2);
+    background-color: var(--brand-color2);
   }
   &__name {
     font-weight: 700;
@@ -40,12 +40,12 @@
   &__description {
     font-size: 16px;
     line-height: 1.88;
-    color: var (--brand-color1);
+    color: var(--brand-color1);
     margin-block-start: 0;
     margin-block-end: 0;
   }
   &__label {
-    background-color: var (--product-label-color);
+    background-color: var(--product-label-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -56,7 +56,7 @@
     &__description {
       font-size: 18px;
       line-height: 1.56;
-      color: var (--brand-color2);
+      color: var(--brand-color2);
     }
   }
 }

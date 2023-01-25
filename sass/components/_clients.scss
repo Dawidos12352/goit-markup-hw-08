@@ -1,26 +1,26 @@
 .client {
   &__icons {
     display: flex;
-    gap: var (--space-gap);
+    gap: var(--space-gap);
     margin-top: 50px;
   }
 
   &__icon {
-    border: 1px solid var (--icon-color);
-    fill: var (--icon-color);
+    border: 1px solid var(--icon-color);
+    fill: var(--icon-color);
     border-radius: 4px;
     padding: 18px 32px 14px 32px;
-    flex-basis: calc((100% - 5 * var (--space-gap)) / 6);
+    flex-basis: calc((100% - 5 * var(--space-gap)) / 6);
     transition-property: border-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    --color5: var (--icon-color);
-    --color3: var (--icon-color);
+    --color5: var(--icon-color);
+    --color3: var(--icon-color);
     &:hover,
     &:focus,
     &:active {
-      border-color: var (--active-color);
-      fill: var (--active-color);
+      border-color: var(--active-color);
+      fill: var(--active-color);
     }
   }
 }

@@ -1,6 +1,6 @@
 .footer {
   &__background {
-    background-color: var (--background-color);
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,10 +17,10 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var (--active-color);
+    color: var(--active-color);
 
     &--part {
-      color: var (--brand-color2);
+      color: var(--brand-color2);
     }
   }
   &__adressess {
@@ -35,7 +35,7 @@
     font-style: normal;
   }
   &__place {
-    color: var (--brand-color2);
+    color: var(--brand-color2);
     font-style: normal;
   }
   &__icon {
@@ -67,7 +67,7 @@
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var (--brand-color2);
+    color: var(--brand-color2);
     margin-bottom: 20px;
     margin-top: 12px;
   }

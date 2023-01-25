@@ -20,11 +20,11 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var (--active-color);
+    color: var(--active-color);
     margin-right: 93px;
 
     &--part {
-      color: var (--logo-color);
+      color: var(--logo-color);
     }
   }
   &__menu {
@@ -32,7 +32,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     &--item {
-      color: var (--brand-color3);
+      color: var(--brand-color3);
     }
   }
   &__menu > li:not(:last-child) {
@@ -68,7 +68,7 @@
   position: relative;
 }
 .portfolio {
-  color: var (--active-color);
+  color: var(--active-color);
   &::after {
     content: " ";
     display: block;
@@ -77,12 +77,12 @@
     position: absolute;
     top: 43px;
     right: auto;
-    background: var (--active-color);
+    background: var(--active-color);
     border-radius: 2px;
   }
 }
 .agencja {
-  color: var (--active-color);
+  color: var(--active-color);
   &::after {
     content: " ";
     position: absolute;
@@ -91,7 +91,7 @@
     right: auto;
     width: 100%;
     height: 4px;
-    background: var (--active-color);
+    background: var(--active-color);
     border-radius: 2px;
   }
 }

@@ -1,5 +1,5 @@
 .banner {
-  background-color: var (--background-color);
+  background-color: var(--background-color);
   align-items: center;
   text-align: center;
   padding: 200px 15px;
@@ -20,7 +20,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var (--brand-color2);
+    color: var(--brand-color2);
     margin-block-start: 0;
     margin-inline-end: 0;
     margin-bottom: 30px;
@@ -34,8 +34,8 @@
 
   letter-spacing: 0.06em;
   padding: 10px 41px 10px 42px;
-  background-color: var (--active-color);
-  color: var (--brand-color2);
+  background-color: var(--active-color);
+  color: var(--brand-color2);
   box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
     0 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
