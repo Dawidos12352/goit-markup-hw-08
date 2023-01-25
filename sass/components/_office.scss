@@ -1,0 +1,34 @@
+.offices {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+
+  &__container {
+    padding-top: 0;
+  }
+}
+.office {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__label {
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var (--brand-color2);
+    padding: 35px 90px 27px;
+  }
+}
+.office > img {
+  z-index: 1;
+}
+.office__label--background {
+  position: relative;
+  bottom: 73px;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  z-index: 2;
+}

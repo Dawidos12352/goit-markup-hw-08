@@ -1,0 +1,25 @@
+.advantages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.advantage {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-block-start: 0;
+    margin-block-end: 10px;
+  }
+  &__subtitle {
+    line-height: 1.71;
+    color: var (--brand-color1);
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  &__icons {
+    margin-bottom: 30px;
+  }
+}

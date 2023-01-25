@@ -1,0 +1,78 @@
+.footer {
+  &__background {
+    background-color: var (--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 60px 0 60px 15px;
+  }
+  &__logo {
+    font-family: "raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var (--active-color);
+
+    &--part {
+      color: var (--brand-color2);
+    }
+  }
+  &__adressess {
+    line-height: 1.71;
+    margin-top: 20px;
+  }
+  &__adressess > li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__address {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+  }
+  &__place {
+    color: var (--brand-color2);
+    font-style: normal;
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: var (--icon-color);
+
+    &--link {
+      --color6: rgba(255, 255, 255, 0.1);
+      --color5: var(--brand-color2);
+
+      &:hover,
+      &:focus,
+      &:active {
+        --color6: var(--active-color);
+        transition-duration: 250ms;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
+  &__wrapper {
+    margin-right: 70px;
+  }
+  &__social--media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var (--brand-color2);
+    margin-bottom: 20px;
+    margin-top: 12px;
+  }
+  &__icons {
+    display: flex;
+    justify-content: center;
+  }
+}

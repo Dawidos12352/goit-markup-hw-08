@@ -1,0 +1,97 @@
+.header,
+.header__nav,
+.header__menu,
+.header__contacts {
+  display: flex;
+}
+.header {
+  justify-content: space-between;
+  padding: 24px 15px 25px 27px;
+
+  &__border {
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__nav {
+    align-items: center;
+  }
+  &__logo {
+    font-family: "raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var (--active-color);
+    margin-right: 93px;
+
+    &--part {
+      color: var (--logo-color);
+    }
+  }
+  &__menu {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    &--item {
+      color: var (--brand-color3);
+    }
+  }
+  &__menu > li:not(:last-child) {
+    margin-right: 46px;
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+  }
+  &__contacts > li:not(:last-child) {
+    margin-right: 50px;
+
+    &--item {
+      color: var(--brand-color1);
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+
+    &:nth-child(1) {
+      position: relative;
+      top: 2px;
+    }
+    &:nth-child(2) {
+      position: relative;
+      top: 4px;
+    }
+  }
+}
+
+.header__menu > li {
+  position: relative;
+}
+.portfolio {
+  color: var (--active-color);
+  &::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 43px;
+    right: auto;
+    background: var (--active-color);
+    border-radius: 2px;
+  }
+}
+.agencja {
+  color: var (--active-color);
+  &::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    top: 43px;
+    right: auto;
+    width: 100%;
+    height: 4px;
+    background: var (--active-color);
+    border-radius: 2px;
+  }
+}

@@ -1,0 +1,72 @@
+.close__btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  top: 8px;
+  background: var (--brand-color2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: rotate(720deg);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: var (--brand-color2);
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
+    0 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transition-property: visibility, opacity, scale, transform;
+  transform: translate(-50%, -50%) scale(1);
+  animation: modal-open 3s;
+
+  &--open {
+    animation-play-state: running;
+  }
+}
+
+@keyframes modal-open {
+  0% {
+    transform: translateX(-50%) translateY(-50%) scale(0.5) rotate(0deg)
+      skew(0deg, 0deg);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(-50%) scale(1.5) rotate(0deg)
+      skew(0deg, 0deg);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) scale(1) rotate(0deg)
+      skew(0deg, 0deg);
+  }
+}
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
