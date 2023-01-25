@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
 </head>
 
@@ -49,6 +50,11 @@
         </li>
       </ul>
     </div>
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="24" height="16">
+        <use href="./images/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
   </header>
 
   <main>
@@ -467,11 +473,50 @@
 
         <button class="form__btn--send" type="submit">Wyślij</button>
       </form>
-
-
     </div>
   </div>
+
+  <div class="mobile js-menu-container" id="mobile__menu">
+    <button class="menu-toggle js-close-menu">&#10005;
+    </button>
+  </div>
+  <div class="mobile__container">
+    <ul class="mobile__nav">
+      <li>
+        <a class="moblie__nav--link" href="./index.html">agencja</a>
+      </li>
+      <li>
+        <a class="moblie__nav--link" href="./portfolio.html">portfolio</a>
+      </li>
+      <li>
+        <a class="moblie__nav--link" href="./index.html">kontakt</a>
+      </li>
+    </ul>
+    <div class="mobile__contacts">
+      <ul>
+        <li>
+          <a class="mobile__contacts--phone" href="tel:+48111111111">+48111111111</a>
+        </li>
+        <li>
+          <a class="mobile__contacts--email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <ul class="mobile__menu">
+      <li><a href="" class="mobile__menu--link">Instagram</a></li>
+      <li><a href="" class="mobile__menu--link">Twitter</a></li>
+      <li><a href="" class="mobile__menu--link">Facebook</a></li>
+      <li><a href="" class="mobile__menu--link">LinkedIn</a></li>
+    </ul>
+  </div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
   <script src="./js/modal.js"></script>
+  <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
