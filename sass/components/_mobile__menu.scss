@@ -1,6 +1,13 @@
-.mobile {
-  background-color: var(--brand-color2);
-  width: 100vw;
-  height: 100vh;
-  z-index: 99;
+.js-close-menu {
+  display: flex;
+  justify-content: right;
+
+  cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.js-close-menu:hover,
+.js-close-menu:focus {
+  fill: var(--active-color);
 }
