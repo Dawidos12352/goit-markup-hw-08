@@ -37,10 +37,10 @@
     margin-block-start: 0;
     margin-block-end: 4px;
   }
-  &__description {
+  &__title {
     font-size: 16px;
     line-height: 1.88;
-    color: var(--brand-color1);
+    color: var(--brand-color3);
     margin-block-start: 0;
     margin-block-end: 0;
   }
@@ -52,12 +52,17 @@
     padding: 49px 24px 49px 45px;
     transform: translateY(110%);
     transition-duration: 250ms;
+  }
 
-    &__description {
-      font-size: 18px;
-      line-height: 1.56;
-      color: var(--brand-color2);
-    }
+  &__description {
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--brand-color2);
+  }
+
+  &__subtitle {
+    margin-top: 4px;
+    color: var(--brand-color1);
   }
 }
 .gallery__product:hover .product__label,

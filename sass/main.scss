@@ -1,8 +1,7 @@
 @import "./utils/variables";
+@import "./base/normalizer";
 @import "./base/common";
-@import "./base/container";
-@import "./base/rest";
-@import "./base/section";
+@import "./base/reset";
 @import "./components/advantage";
 @import "./components/banner";
 @import "./components/cards";
@@ -15,4 +14,3 @@
 @import "./components/modal";
 @import "./components/newsletter";
 @import "./components/office";
-@import "./components/mobile__menu";

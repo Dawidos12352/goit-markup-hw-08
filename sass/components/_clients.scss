@@ -19,8 +19,10 @@
     &:hover,
     &:focus,
     &:active {
-      border-color: var(--active-color);
-      fill: var(--active-color);
+      cursor: pointer;
+      border: 1px solid var(--active-color);
+      --color5: var(--active-color);
+      --color3: var(--active-color);
     }
   }
 }

@@ -1,16 +1,12 @@
 .footer {
   &__background {
     background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   &__container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 60px 0 60px 15px;
+    padding: 60px 0 60px;
   }
   &__logo {
     font-family: "raleway";
@@ -58,7 +54,7 @@
   &__wrapper {
     margin-right: 70px;
   }
-  &__social--media {
+  &__social-media {
     display: flex;
     flex-direction: column;
     justify-content: center;

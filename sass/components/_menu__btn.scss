@@ -1,12 +1,12 @@
-.menu__btn {
+.menu__buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.menu__btn > li:not(:last-child) {
+.menu__buttons > li:not(:last-child) {
   margin-right: 8px;
 }
-.menu__btn--item > button {
+.menu__btn > button {
   padding: 6px 22px;
 }

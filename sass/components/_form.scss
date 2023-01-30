@@ -11,7 +11,7 @@
     color: var(--brand-color3);
     margin-bottom: 12px;
   }
-  &__title {
+  &__label {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,14 +34,14 @@
   &__text {
     display: block;
   }
-  &__item-textarea,
-  &__item {
+  &__input--textarea,
+  &__input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 448px;
     margin-top: 4px;
   }
-  &__item {
+  &__input {
     height: 40px;
     width: 448px;
     padding-left: 30px;
@@ -79,7 +79,7 @@
   &__link {
     color: var(--active-color);
   }
-  &__btn--send {
+  &__btn-send {
     width: 200px;
     height: 50px;
     background: var(--active-color);
@@ -90,7 +90,7 @@
     letter-spacing: 0.06em;
     color: var(--brand-color2);
     margin-left: 124px;
-    margin-top: 30px;
+    margin-top: 54px;
   }
 
   &__checkbox {
@@ -104,7 +104,7 @@
       position: relative;
       margin-left: 15px;
     }
-    &--title {
+    &--label {
       display: flex;
       position: absolute;
       left: 24px;
@@ -120,7 +120,7 @@
         z-index: 0;
       }
     }
-    &--item {
+    &--input {
       appearance: none;
       line-height: 1.71;
       width: 16px;
@@ -146,16 +146,16 @@
   }
 }
 
-.form__checkbox--item:checked + .form__checkbox--title::before {
+.form__checkbox--input:checked + .form__checkbox--label::before {
   background-color: var(--active-color);
   border: none;
 }
 
-.form__checkbox--item:checked + .form__checkbox--title svg {
+.form__checkbox--input:checked + .form__checkbox--label svg {
   visibility: visible;
 }
 
-.form__title:focus-within .form__icon {
+.form__label:focus-within .form__icon {
   fill: var(--active-color);
   transition-duration: 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

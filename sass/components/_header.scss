@@ -41,13 +41,12 @@
   &__contacts {
     display: flex;
     align-items: center;
-  }
-  &__contacts > li:not(:last-child) {
-    margin-right: 50px;
-
     &--item {
       color: var(--brand-color1);
     }
+  }
+  &__contacts > li:not(:last-child) {
+    margin-right: 50px;
   }
 
   &__icon {
@@ -75,7 +74,7 @@
     width: 100%;
     height: 4px;
     position: absolute;
-    top: 43px;
+    top: 45px;
     right: auto;
     background: var(--active-color);
     border-radius: 2px;
@@ -87,7 +86,7 @@
     content: " ";
     position: absolute;
     display: block;
-    top: 43px;
+    top: 45px;
     right: auto;
     width: 100%;
     height: 4px;

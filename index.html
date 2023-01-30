@@ -50,11 +50,7 @@
         </li>
       </ul>
     </div>
-    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg width="24" height="16">
-        <use href="./images/icons.svg#icon-menu"></use>
-      </svg>
-    </button>
+
   </header>
 
   <main>
@@ -65,7 +61,7 @@
           efektywne rozwiązania <br />
           dla waszego biznesu
         </h1>
-        <button class="open__btn" type="button" data-modal-open>Zamów usługę</button>
+        <button class="banner__btn" type="button" data-modal-open>Zamów usługę</button>
 
       </div>
     </section>
@@ -117,7 +113,7 @@
       </div>
     </section>
 
-    <section class="section offices__container">
+    <section class="section section--offices">
       <div class="container">
         <h2 class="section__header">Czym się zajmujemy</h2>
         <ul class="offices">
@@ -352,7 +348,7 @@
   </main>
 
   <footer class="footer__background">
-    <div class="footer__container">
+    <div class="container footer__container">
       <div class="footer__wrapper">
         <a class="footer__logo link" href="WebStudio">Web<span class="footer__logo--part">Studio</span></a>
         <address>
@@ -371,7 +367,7 @@
           </ul>
         </address>
       </div>
-      <div class="footer__social--media">
+      <div class="footer__social-media">
         <h3 class="footer__title">dołącz do nas</h3>
         <ul class="footer__icons">
           <li class="footer__icon">
@@ -422,44 +418,48 @@
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="close__btn modal--close" type="button" data-modal-close>&#10005;</button>
+      <button class="modal__close-btn" type="button" data-modal-close>
+        <svg class="modal__close-icon" width="14px" height="14px">
+          <use href="./images/icons.svg#icon-colse-x"></use>
+        </svg>
+      </button>
 
       <form class="form" name="users_data_form" autocomplete="off">
         <h2 class="form__header"> Zostaw swoje dane w formularzu poniżej </h2>
 
-        <label class="form__title">
+        <label class="form__label">
           Imie
           <svg class="form__icon" width="20px" height="20px">
             <use href="./images/icons.svg#icon-user"></use>
           </svg>
-          <input class="form__item" type="text" name="firstname" required minlength="5" maxlength="18" />
+          <input class="form__input" type="text" name="firstname" required minlength="5" maxlength="18" />
         </label>
 
-        <label class="form__title">
+        <label class="form__label">
           Telefon
           <svg class="form__icon" width="22px" height="22px">
             <use href="./images/icons.svg#icon-phone-formular"></use>
           </svg>
-          <input class="form__item" type="tel" name="phone" required />
+          <input class="form__input" type="tel" name="phone" required />
         </label>
 
-        <label class="form__title">
+        <label class="form__label">
           Email
           <svg class="form__icon" width="30px" height="20px">
             <use href="./images/icons.svg#icon-email-formular"></use>
           </svg>
-          <input class="form__item" type="email" name="email" required minlength="6">
+          <input class="form__input" type="email" name="email" required minlength="6">
         </label>
 
-        <label class="form__title">
+        <label class="form__label">
           Komentarz
-          <textarea class="form__item--textarea" name="comment" rows="6" placeholder="Wprowadź tekst"></textarea>
+          <textarea class="form__input--textarea" name="comment" rows="6" placeholder="Wprowadź tekst"></textarea>
         </label>
 
         <div class="form__checkbox--container">
-          <input class="form__checkbox--item" type="checkbox" name="statue_and_policy" value="checked" required
+          <input class="form__checkbox--input" type="checkbox" name="statue_and_policy" value="checked" required
             id="check" />
-          <label class="form__checkbox--title">
+          <label class="form__checkbox--label">
             <svg class="form__checkbox--icon" width="13px" height="13px">
               <use href="./images/icons.svg#icon-check"></use>
             </svg>
@@ -471,53 +471,11 @@
           </label>
         </div>
 
-        <button class="form__btn--send" type="submit">Wyślij</button>
+        <button class="form__btn-send" type="submit">Wyślij</button>
       </form>
     </div>
   </div>
 
-  <div class="menu-container js-menu-container" id="mobile__menu">
-    <button type="button" class="menu-toggle js-close-menu">&#10005;
-    </button>
-
-
-    <ul class="mobile__nav">
-      <li>
-        <a class="moblie__nav--link" href="./index.html">agencja</a>
-      </li>
-      <li>
-        <a class="moblie__nav--link" href="./portfolio.html">portfolio</a>
-      </li>
-      <li>
-        <a class="moblie__nav--link" href="./index.html">kontakt</a>
-      </li>
-    </ul>
-    <div class="mobile__contacts">
-      <ul>
-        <li>
-          <a class="mobile__contacts--phone" href="tel:+48111111111">+48111111111</a>
-        </li>
-        <li>
-          <a class="mobile__contacts--email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-      </ul>
-
-
-
-      <ul class="mobile__menu">
-        <li><a href="" class="mobile__menu--link">Instagram</a></li>
-        <li><a href="" class="mobile__menu--link">Twitter</a></li>
-        <li><a href="" class="mobile__menu--link">Facebook</a></li>
-        <li><a href="" class="mobile__menu--link">LinkedIn</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-
-  <script defer src="js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 

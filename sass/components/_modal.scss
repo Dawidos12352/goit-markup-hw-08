@@ -1,4 +1,4 @@
-.close__btn {
+.modal__close-btn {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -7,6 +7,7 @@
   background: var(--brand-color2);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  padding: 4px;
 
   &:hover,
   &:focus,
