@@ -17,6 +17,13 @@
 
 <body>
   <header class="header__border">
+
+    <button class="header__menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="40" height="40" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <use herf="./images/icons.svg#icon-menu_mobile"></use>
+      </svg>
+    </button>
+
     <div class="container header">
       <nav class="header__nav">
         <a class="header__logo link" href="./index.html">Web<span class="header__logo--part">Studio</span></a>
@@ -476,6 +483,59 @@
     </div>
   </div>
 
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-container__close js-close-menu">
+      <svg width="20px" height="20px">
+        <use href="./images/icons.svg#icon-colse-x"></use>
+      </svg>
+    </button>
+    <ul class="menu-container__nav-list">
+      <li class="menu-container__nav-item">
+        <a class="menu-container__nav-link menu-container--active" href="#agencja">Agencja</a>
+      </li>
+
+      <li class="menu-container__nav-item">
+        <a class="menu-container__nav-link" href="./portfolio.html">Portfolio</a>
+      </li>
+
+      <li class="menu-container__nav-item">
+        <a class="menu-container__nav-link" href="#kontakt">Kontakt</a>
+      </li>
+    </ul>
+
+    <div class="menu-container__wrapper">
+      <div class="menu-container__contacts">
+        <a class="menu-container__contacts-link menu-container__contacts-link--tel" href="tel:+48111111111">
+          +48 111 111 111
+        </a>
+        <a class="menu-container__contacts-link menu-container__contacts-link--email" href="mailto:info@devstudio.com">
+          info@devstudio.com</a>
+      </div>
+      <ul class="menu-container__social-media">
+        <li class="menu-container__social-media-item">
+          <a class="menu-container__social-media-link menu-container__social-media-link--padding-right"
+            href="#instagram.html">Instagram</a>
+        </li>
+        <li class="menu-container__social-media-item">
+          <a class="menu-container__social-media-link menu-container__social-media-link--border"
+            href="#twitter.html">Twitter</a>
+        </li>
+        <li class="menu-container__social-media-item">
+          <a class="menu-container__social-media-link menu-container__social-media-link--border"
+            href="#facebook.html">Facebook</a>
+        </li>
+        <li class="menu-container__social-media-item">
+          <a class="menu-container__social-media-link menu-container__social-media-link--padding-left"
+            href="#linkedin.html">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
