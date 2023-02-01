@@ -5,27 +5,56 @@
   display: flex;
 }
 .header {
+  border-bottom: 1px solid #ececec;
   justify-content: space-between;
-  padding: 16px 15px;
+  padding: 16px 0 15px;
   background-color: var(--brand-color2);
   @include tablet {
-    padding: 24px 15px 25px 27px;
+    padding: 24px 0 25px;
   }
   @include desktop {
-    padding: 24px 15px 25px 27px;
+    padding: 24px 0 25px;
   }
 
   &__menu-btn {
     position: absolute;
     top: 10px;
     right: 15px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+    @include tablet {
+      display: none;
+    }
+    &--icon {
+      fill: var(--brand-color3);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:focus,
+      &:hover,
+      &:active {
+        fill: var(--active-color);
+      }
+    }
   }
 
-  &__border {
-    border-bottom: 1px solid #ececec;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet {
+    }
+    @include desktop {
+    }
   }
 
   &__nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
   &__logo {
@@ -41,9 +70,15 @@
     }
   }
   &__menu {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    display: none;
+    @include tablet {
+      display: flex;
+      gap: 60px;
+    }
+    @include desktop {
+      display: flex;
+      gap: 46px;
+    }
     &--item {
       color: var(--brand-color3);
     }
