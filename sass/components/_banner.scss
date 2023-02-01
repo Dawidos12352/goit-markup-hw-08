@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   background-position: center;
   @include tablet {
-    padding: 118px 201px 118px 202px;
+    padding: 118px 0;
     background-image: linear-gradient(
         to top,
         rgba(47, 48, 58, 0.4) 0%,
@@ -24,7 +24,7 @@
       url("../images/banner-background.jpg");
   }
   @include desktop {
-    padding: 200px 451px;
+    padding: 200px 0;
     background-image: linear-gradient(
         to top,
         rgba(47, 48, 58, 0.4) 0%,
