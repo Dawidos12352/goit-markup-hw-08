@@ -1,6 +1,6 @@
 .advantages {
   display: flex;
-  gap: 30px;
+  gap: var(--space-gap);
   flex-wrap: wrap;
   margin: 0 15px;
   @include tablet {

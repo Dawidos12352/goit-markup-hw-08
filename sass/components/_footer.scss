@@ -1,19 +1,38 @@
 .footer {
   &__background {
+    padding: 60px 0;
     background-color: var(--background-color);
+    display: flex;
+    align-content: center;
   }
   &__container {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 60px 0 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include tablet {
+    }
+    @include desktop {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 70px;
+    }
   }
   &__logo {
     font-family: "raleway";
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     color: var(--active-color);
+
+    @include desktop {
+      font-size: 26px;
+      line-height: 1.19;
+    }
 
     &--part {
       color: var(--brand-color2);
@@ -22,17 +41,19 @@
   &__adressess {
     line-height: 1.71;
     margin-top: 20px;
+    @include tablet {
+    }
+    @include desktop {
+    }
   }
   &__adressess > li:not(:last-child) {
     margin-bottom: 9px;
   }
   &__address {
     color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
   }
   &__place {
     color: var(--brand-color2);
-    font-style: normal;
   }
   &__icon {
     margin-right: 10px;
@@ -52,8 +73,9 @@
     }
   }
   &__wrapper {
-    margin-right: 70px;
+    line-height: 1.71;
   }
+
   &__social-media {
     display: flex;
     flex-direction: column;
