@@ -57,15 +57,14 @@ button {
   @include desktop {
     padding: 94px 0;
   }
-
-  &--offices {
-    padding-top: 0;
-  }
   &__header {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     color: var(--brand-color3);
+  }
+  &__cards {
+    background: #f5f4fa;
   }
 }
