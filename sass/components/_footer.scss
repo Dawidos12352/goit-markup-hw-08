@@ -7,18 +7,20 @@
   }
   &__container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-content: center;
     gap: 60px;
     text-align: center;
     flex-wrap: wrap;
     justify-content: center;
-
     @include tablet {
+      gap: 144px;
     }
     @include desktop {
       flex-direction: row;
       align-items: flex-start;
+      align-content: flex-start;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
       gap: 70px;
     }
   }
@@ -79,7 +81,7 @@
   &__social-media {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
   }
   &__title {
     font-weight: 700;

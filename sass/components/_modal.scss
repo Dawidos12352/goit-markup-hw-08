@@ -8,21 +8,25 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 4px;
+  cursor: pointer;
 
   &:hover,
   &:focus,
   &:active {
+    background-color: var(--active-color);
+    color: var(--brand-color2);
     transform: rotate(720deg);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     transition-duration: 250ms;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
   }
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: var(--brand-color2);
   box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
     0 2px 2px rgba(0, 0, 0, 0.12);
@@ -33,6 +37,10 @@
   transition-property: visibility, opacity, scale, transform;
   transform: translate(-50%, -50%) scale(1);
   animation: modal-open 3s;
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
+  }
 
   &--open {
     animation-play-state: running;
