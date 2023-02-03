@@ -63,11 +63,11 @@
     <section class="section">
       <div class="container">
         <ul class="menu__buttons">
-          <li class="menu__btn"><button type="button">Wszystkie</button></li>
-          <li class="menu__btn"><button type="button">Strony</button></li>
-          <li class="menu__btn"><button type="button">Aplikacje</button></li>
-          <li class="menu__btn"><button type="button">Dizajn</button></li>
-          <li class="menu__btn"><button type="button">Marketing</button></li>
+          <li class="menu__btn"><button class="menu__btn-item" type="button">Wszystkie</button></li>
+          <li class="menu__btn"><button class="menu__btn-item" type="button">Strony</button></li>
+          <li class="menu__btn"><button class="menu__btn-item" type="button">Aplikacje</button></li>
+          <li class="menu__btn"><button class="menu__btn-item" type="button">Dizajn</button></li>
+          <li class="menu__btn"><button class="menu__btn-item" type="button">Marketing</button></li>
         </ul>
         <ul class="gallery">
 
@@ -282,6 +282,57 @@
 
     </div>
   </footer>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-container__close js-close-menu">
+      <svg width="40px" height="40px">
+        <use href="./images/icons.svg#icon-colse-x"></use>
+      </svg>
+    </button>
+    <ul class="menu-container__nav">
+      <li class="menu-container__nav--item">
+        <a class="menu-container__nav--link " href="#agencja">Agencja</a>
+      </li>
+
+      <li class="menu-container__nav--item">
+        <a class="menu-container__nav--link menu-container--active" href="./portfolio.html">Portfolio</a>
+      </li>
+
+      <li class="menu-container__nav--item">
+        <a class="menu-container__nav--link" href="#kontakt">Kontakt</a>
+      </li>
+    </ul>
+
+    <div class="menu-container__adress">
+      <div class="menu-container__contacts">
+        <a class="menu-container__contacts--link menu-container__contacts--tel" href="tel:+48111111111">
+          +48 111 111 111
+        </a>
+        <a class="menu-container__contacts--link menu-container__contacts--email" href="mailto:info@devstudio.com">
+          info@devstudio.com</a>
+      </div>
+      <ul class="menu-container__social-media">
+        <li class="menu-container__social-media--item">
+          <a class="menu-container__social-media--link menu-container__social-media--padding-right"
+            href="#">Instagram</a>
+        </li>
+        <li class="menu-container__social-media--item">
+          <a class="menu-container__social-media--link menu-container__social-media--border" href="#">Twitter</a>
+        </li>
+        <li class="menu-container__social-media-item">
+          <a class="menu-container__social-media--link menu-container__social-media--border" href="#">Facebook</a>
+        </li>
+        <li class="menu-container__social-media--item">
+          <a class="menu-container__social-media--link menu-container__social-media--padding-left" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

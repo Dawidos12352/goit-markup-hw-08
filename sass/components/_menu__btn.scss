@@ -2,8 +2,17 @@
   &__buttons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-left: 15px;
+
     align-items: center;
+    @include tablet {
+      justify-content: center;
+      margin-left: 0;
+    }
+    @include desktop {
+    }
   }
   &__btn {
     font-weight: 500;
@@ -12,20 +21,24 @@
     text-align: center;
     border-radius: 4px;
     cursor: pointer;
-    border-style: none;
 
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: var(--active-color);
-      color: var(--brand-color2);
-      box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
-        0 2px 2px rgba(0, 0, 0, 0.12);
-      border-radius: 4px;
+    &-item {
       border-style: none;
-      transition-property: visibility, opacity, transform;
-      transition-duration: 250ms;
-      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      background-color: var(--icon-advantages);
+      font-weight: 500;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: var(--active-color);
+        color: var(--brand-color2);
+        box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
+          0 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        border-style: none;
+        transition-property: visibility, opacity, transform;
+        transition-duration: 250ms;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
     }
   }
 }
