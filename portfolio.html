@@ -15,13 +15,20 @@
 </head>
 
 <body>
-  <header class="header__border">
-    <div class="container header">
+  <header class="header">
+
+    <button class="header__menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="header__menu-btn--icon" width="40" height="40">
+        <use href="./images/icons.svg#icon-menu_mobile"></use>
+      </svg>
+    </button>
+
+    <div class="container header__wrapper">
       <nav class="header__nav">
         <a class="header__logo link" href="./index.html">Web<span class="header__logo--part">Studio</span></a>
         <ul class="header__menu">
           <li>
-            <a class="link header__menu--item" href="agencja">Agencja</a>
+            <a class="link header__menu--item " href="agencja">Agencja</a>
           </li>
           <li>
             <a class="link header__menu--item active-link" href="./portfolio.html">Porfolio</a>
@@ -32,7 +39,7 @@
         </ul>
       </nav>
       <ul class="header__contacts">
-        <li class="header__contact">
+        <li>
           <a class="link header__contacts--item" href="mailto:info@devstudio.com">
             <svg class=" header__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-e-mail"></use>
@@ -40,7 +47,7 @@
             info@devstudio.com
           </a>
         </li>
-        <li class="header__contact">
+        <li>
           <a class="link header__contacts--item" href="tel:48111111111">
             <svg class="header__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
@@ -49,6 +56,7 @@
         </li>
       </ul>
     </div>
+
   </header>
 
   <main>
@@ -227,7 +235,7 @@
           </ul>
         </address>
       </div>
-      <div class="footer__social--media">
+      <div class="footer__social-media">
         <h3 class="footer__title">dołącz do nas</h3>
         <ul class="footer__icons">
           <li class="footer__icon">
@@ -260,18 +268,18 @@
           </li>
         </ul>
       </div>
-      <div class="newsletter">
-        <form class="newsletter__box" name="signup_form" autocomplete="on" novalidate>
-          <label class="newsletter__title">
-            zapisz się do newslettera
-            <input class="newsletter__item" type="email" name="email" placeholder="E-mail" />
-          </label>
-          <button class="newsletter__btn" type="submit"><span>Zapisz się</span>
-            <svg class="icon__icon--send" width="24px" height="24px">
-              <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg></button>
-        </form>
-      </div>
+
+      <form class="newsletter" name="signup_form" autocomplete="on" novalidate>
+        <label class="newsletter__title">
+          zapisz się do newslettera
+          <input class="newsletter__input" type="email" name="email" placeholder="E-mail" />
+        </label>
+        <button class="newsletter__btn" type="submit"><span class="newsletter__btn--text">Zapisz się</span>
+          <svg class="icon__icon--send" width="24px" height="24px">
+            <use href="./images/icons.svg#icon-icon-send"></use>
+          </svg></button>
+      </form>
+
     </div>
   </footer>
 </body>
