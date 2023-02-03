@@ -14,10 +14,16 @@
     bottom: 48px;
   }
   @include desktop {
-    margin-top: 12px;
-    margin-left: 78px;
+    margin-top: 60px;
+    margin-left: 8px;
     flex-wrap: nowrap;
     flex-direction: row;
+  }
+  &__title {
+    @include desktop {
+      text-align: left;
+      width: 358px;
+    }
   }
   &__input {
     margin-top: 20px;
@@ -57,24 +63,9 @@
     padding-left: 42px;
     margin-top: 20px;
 
-    @include tablet {
-    }
     @include desktop {
-      background-color: var(--active-color);
-      color: var(--brand-color2);
-      margin-top: 36px;
-      margin-left: 12px;
-      width: 200px;
-      height: 50px;
-      letter-spacing: 0.06em;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.88;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
-      padding-left: 42px;
+      margin-left: 8px;
+      margin-top: 34px;
     }
 
     &:focus,
