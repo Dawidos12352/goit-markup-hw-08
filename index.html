@@ -133,21 +133,30 @@
         <h2 class="section__header">Czym się zajmujemy</h2>
         <ul class="office__list">
           <li class="office__item">
-            <img class="office__image" src="./images/box1.jpg" alt="Programista koduje" width="370" height="294" />
+            <picture>
+              <source srcset="images/box1.jpg, images/box1.jpg 2x, images/box1.jpg 3x" />
+              <img class="office__image" src="./images/box1.jpg" alt="Programista koduje" width="370" height="294" />
+            </picture>
             <div class="office__label--background">
               <p class="office__label">aplikacje komputerowe</p>
             </div>
           </li>
           <li class="office__item">
-            <img class="office__image" src="./images/box2.jpg" alt="Pogramista pisze aplikacje na telefon" width="370"
-              height="294" />
+            <picture>
+              <source srcset="images/box2.jpg, images/box2.jpg 2x, images/box2.jpg 3x" />
+              <img class="office__image" src="./images/box2.jpg" alt="Pogramista pisze aplikacje na telefon" width="370"
+                height="294" />
+            </picture>
             <div class="office__label--background">
               <p class="office__label">aplikacje mobilne</p>
             </div>
           </li>
           <li class="office__item">
-            <img class="office__image" src="./images/box3.jpg" alt="Programista używa aplikacji" width="370"
-              height="294" />
+            <picture>
+              <source srcset="images/box3.jpg, images/box3.jpg 2x, images/box3.jpg 3x" />
+              <img class="office__image" src="./images/box3.jpg" alt="Programista używa aplikacji" width="370"
+                height="294" />
+            </picture>
             <div class="office__label--background">
               <p class="office__label">rozwiązania graficzne</p>
             </div>
@@ -161,8 +170,21 @@
         <h2 class="section__header">Nasz zespół</h2>
         <ul class="cards">
           <li class="card">
-            <img class="card__image" src="./images/img1.jpg" alt="Product Designer osobiście" width="270"
-              height="260" />
+            <picture class="card__images">
+              <source media="screen and (max-width: 768px)" srcset="images/mobile/img1-mobile.jpg,
+                 images/mobile/img1-mobile.jpg 2x, images/mobile/img1-mobile.jpg 3x " />
+
+              <source media="screen and (max-width: 1200px)" srcset="images/tablet/img1-tablet.jpg,
+              images/tablet/img1-tablet.jpg 2x, images/tablet/img1-tablet.jpg 3x" />
+              <source media="screen and (min-width: 1200px)" srcset="images/desktop/img1-desktop.jpg,
+              images/desktop/img1-desktop.jpg 2x, images/desktop/img1-desktop.jpg 3x" />
+
+
+
+              <img class="card__image" src="./images/img1.jpg" alt="Product Designer osobiście" width="270"
+                height="260" />
+
+            </picture>
             <div class="card__container">
               <h3 class="card__title">John Doe</h3>
               <p class="card__subtitle">Product Designer</p>
@@ -199,8 +221,22 @@
             </div>
           </li>
           <li class="card">
-            <img class="card__image" src="./images/img2.jpg" alt="Frontend Developer osobiście" width="270"
-              height="260" />
+            <picture class="card__images">
+              <source media="screen and (max-width: 768px)" srcset="images/mobile/img2-mobile.jpg,
+                 images/mobile/img2-mobile.jpg 2x, images/mobile/img2-mobile.jpg 3x " />
+
+              <source media="screen and (max-width: 1200px)" srcset="images/tablet/img2-tablet.jpg,
+              images/tablet/img2-tablet.jpg 2x, images/tablet/img2-tablet.jpg 3x" />
+              <source media="screen and (min-width: 1200px)" srcset="images/desktop/img2-desktop.jpg,
+              images/desktop/img2-desktop.jpg 2x, images/desktop/img2-desktop.jpg 3x" />
+
+
+
+              <img class="card__image" src="./images/img2.jpg" alt="Frontend Developer osobiście" width="270"
+                height="260" />
+
+            </picture>
+
             <div class="card__container">
               <h3 class="card__title">John Doe</h3>
               <p class="card__subtitle">Frontend Developer</p>
@@ -237,8 +273,21 @@
             </div>
           </li>
           <li class="card">
-            <img class="card__image" src="./images/img3.jpg" alt="John Doe odpoweidzialny za marketing osobiście"
-              width="270" height="260" />
+            <picture class="card__images">
+              <source media="screen and (max-width: 768px)" srcset="images/mobile/img3-mobile.jpg,
+                 images/mobile/img3-mobile.jpg 2x, images/mobile/img3-mobile.jpg 3x " />
+
+              <source media="screen and (max-width: 1200px)" srcset="images/tablet/img3-tablet.jpg,
+              images/tablet/img3-tablet.jpg 2x, images/tablet/img3-tablet.jpg 3x" />
+              <source media="screen and (min-width: 1200px)" srcset="images/desktop/img3-desktop.jpg,
+              images/desktop/img3-desktop.jpg 2x images/desktop/img3-desktop.jpg 3x" />
+
+
+
+              <img class="card__image" src="./images/img3.jpg" alt="John Doe odpoweidzialny za marketing osobiście"
+                width="270" height="260" />
+
+            </picture>
             <div class="card__container">
               <h3 class="card__title">John Doe</h3>
               <p class="card__subtitle">Marketing</p>
@@ -275,7 +324,21 @@
             </div>
           </li>
           <li class="card">
-            <img class="card__image" src="./images/img4.jpg" alt="UI Designer osobiście" width="270" height="260" />
+            <picture class="card__images">
+              <source media="screen and (max-width: 768px)" srcset="images/mobile/img4-mobile.jpg,
+                 images/mobile/img4-mobile.jpg 2x, images/mobile/img4-mobile.jpg 3x" />
+
+              <source media="screen and (max-width: 1200px)" srcset="images/tablet/img4-tablet.jpg,
+              images/tablet/img4-tablet.jpg 2x, images/tablet/img4-tablet.jpg 3x" />
+              <source media="screen and (min-width: 1200px)" srcset="images/desktop/img4-desktop.jpg,
+              images/desktop/img4-desktop.jpg 2x, images/desktop/img4-desktop.jpg 3x" />
+
+
+
+              <img class="card__image" src="./images/img4.jpg" alt="UI Designer osobiście" width="270" height="260" />
+
+            </picture>
+
             <div class="card__container">
               <h3 class="card__title">John Doe</h3>
               <p class="card__subtitle">UI Designer</p>
