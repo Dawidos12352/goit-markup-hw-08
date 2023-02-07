@@ -2,6 +2,7 @@
   &__icons {
     display: flex;
     gap: var(--space-gap);
+    justify-content: center;
     margin-top: 30px;
     flex-wrap: wrap;
     @include desktop {
@@ -13,21 +14,25 @@
     border: 1px solid var(--icon-color);
     fill: var(--icon-color);
     border-radius: 4px;
-    padding: 16px 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
     flex-basis: calc((100% - 1 * var(--space-gap)) / 2);
     transition-property: border-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --color5: var(--icon-color);
     --color3: var(--icon-color);
+    max-width: 210px;
 
     @include tablet {
-      padding: 16px 60px;
       flex-basis: calc((100% - 2 * var(--space-gap)) / 3);
+      max-width: 226px;
     }
     @include desktop {
-      padding: 18px 32px 14px;
       flex-basis: calc((100% - 5 * var(--space-gap)) / 6);
+      max-width: 170px;
     }
     &:hover,
     &:focus,

@@ -17,7 +17,7 @@ body {
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
-
+  padding: 0 15px;
   @include tablet {
     max-width: 768px;
   }
@@ -33,14 +33,11 @@ body {
   @include desktop {
     padding: 94px 0;
   }
-  &__header {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    color: var(--brand-color3);
-  }
+
   &__cards {
     background: #f5f4fa;
   }
+}
+h2 {
+  text-align: center;
 }

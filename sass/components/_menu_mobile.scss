@@ -6,16 +6,17 @@
   height: 100vh;
   padding: 48px 40px;
   background-color: var(--brand-color2);
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   z-index: 999;
 
-  transform: translateX(100%);
+  transform: opacity(0);
   transition: transform 250ms ease-in-out;
 
   &.is-open {
-    transform: translateX(0);
+    display: flex;
+    transform: opacity(1);
   }
 
   &__close {

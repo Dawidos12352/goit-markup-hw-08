@@ -2,7 +2,6 @@
   display: flex;
   gap: var(--space-gap);
   flex-wrap: wrap;
-  margin: 0 15px;
   @include tablet {
   }
   @include desktop {
@@ -10,6 +9,13 @@
   }
 }
 .advantage {
+  max-width: 450px;
+  @include tablet {
+    max-width: 354px;
+  }
+  @include desktop {
+    max-width: 270px;
+  }
   &__title {
     font-weight: 700;
     text-transform: uppercase;
@@ -30,12 +36,12 @@
     color: var(--brand-color1);
     margin-block-start: 0;
     margin-block-end: 0;
-    width: 450px;
+    max-width: 450px;
     @include tablet {
-      width: 354px;
+      max-width: 354px;
     }
     @include desktop {
-      width: 270px;
+      max-width: 270px;
     }
   }
 
@@ -49,13 +55,13 @@
     display: flex;
     justify-content: center;
     background-color: var(--icon-advantages);
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     @include tablet {
-      width: 354px;
+      max-width: 354px;
     }
     @include desktop {
-      width: 270px;
+      max-width: 270px;
     }
   }
 }

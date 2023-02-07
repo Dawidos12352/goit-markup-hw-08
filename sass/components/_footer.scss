@@ -18,7 +18,7 @@
     @include desktop {
       flex-direction: row;
       flex-wrap: nowrap;
-      gap: 70px;
+      gap: 60px;
     }
   }
   &__logo {
@@ -40,6 +40,7 @@
   &__adressess {
     line-height: 1.71;
     margin-top: 20px;
+    font-style: normal;
 
     @include desktop {
       width: 246px;
