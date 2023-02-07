@@ -11,12 +11,12 @@
   justify-content: space-between;
   z-index: 999;
 
-  transform: opacity(0);
+  transform: opacity(1);
   transition: transform 250ms ease-in-out;
 
   &.is-open {
     display: flex;
-    transform: opacity(1);
+    transform: opacity(0);
   }
 
   &__close {
