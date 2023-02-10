@@ -19,6 +19,9 @@
     background-color: var(--brand-color2);
     position: relative;
     overflow: hidden;
+    max-width: 370px;
+    max-height: 400px;
+
     @include tablet {
       flex-basis: calc((100% - 90px) / 2);
     }
@@ -42,6 +45,10 @@
     letter-spacing: 0.06em;
     margin-block-start: 0;
     margin-block-end: 4px;
+  }
+  &__image {
+    max-width: 370px;
+    max-height: 294px;
   }
   &__title {
     font-size: 16px;

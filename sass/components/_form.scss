@@ -1,6 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
+
   padding: 40px;
 
   &__header {
@@ -38,15 +39,17 @@
   &__input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    width: 370px;
+    max-width: 370px;
     margin-top: 4px;
+    margin-right: 40px;
     @include desktop {
       width: 448px;
     }
   }
   &__input {
     height: 40px;
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     padding-left: 30px;
     @include desktop {
       width: 448px;
@@ -65,7 +68,8 @@
       padding: 12px 16px;
       letter-spacing: 0.01em;
       resize: none;
-      width: 370px;
+      max-width: 370px;
+      width: 100%;
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
       margin-top: 10px;
@@ -89,7 +93,7 @@
     color: var(--active-color);
   }
   &__btn-send {
-    width: 200px;
+    max-width: 200px;
     height: 50px;
     background: var(--active-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -101,6 +105,7 @@
     border-style: none;
     margin-left: 85px;
     margin-top: 45px;
+    cursor: pointer;
 
     @include desktop {
       margin-left: 124px;
